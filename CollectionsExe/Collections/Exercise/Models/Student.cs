@@ -16,6 +16,9 @@ namespace CollectionsExe.Collections.Exercise.Models
 
         }
 
+        public int GetKita()
+        { return Kita; }
+
         /// <summary>
         /// פעולה המחזירה אוסף של תלמידים
         /// </summary>

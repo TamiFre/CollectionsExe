@@ -1,5 +1,5 @@
-﻿using CollectionsExe.Collections.Models;
-
+﻿using CollectionsExe.Collections.Exercise.Models;
+using CollectionsExe.Collections.Models;
 namespace CollectionsExe
 {
     internal class Program
@@ -86,5 +86,18 @@ namespace CollectionsExe
             
             #endregion
         }
+
+
+        List <Student> students = new List<Student>();
+        Func<List<Student>, int, int> lalala = (List<Student> studentsla, int x) =>
+        {
+            int count = 0;
+            for (int i = 0; i < studentsla.Count; i++)
+            {
+                if (studentsla[i].GetKita() == x)
+                    count++;
+            }
+            return count;
+        };
     }
 }
